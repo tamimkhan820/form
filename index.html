@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .booking-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .booking-form input, .booking-form select, .booking-form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .booking-form button {
+            background-color: #d32f2f;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .booking-form button:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+    <div class="booking-form">
+        <form>
+            <input type="text" placeholder="Phone No" required>
+            <select required>
+                <option value="" disabled selected>1 Person</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+                <option value="7">7 People</option>
+                <option value="8">8 People</option>
+            </select>
+            <input type="date" required>
+            <select required>
+                <option value="" disabled selected>10:00 AM</option>
+                <option value="08:00">08:00 AM</option>
+                <option value="09:00">09:00 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="01:00">01:00 PM</option>
+                <option value="02:00">02:00 PM</option>
+                <option value="03:00">03:00 PM</option>
+                <option value="04:00">04:00 PM</option>
+                <option value="05:00">05:00 PM</option>
+                <option value="06:00">06:00 PM</option>
+                <option value="07:00">07:00 PM</option>
+                <option value="08:00">08:00 PM</option>
+            </select>
+            <button type="submit">BOOK A TABLE</button>
+        </form>
+    </div>
+</body>
+</html>
